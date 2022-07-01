@@ -1,0 +1,98 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200&family=Open+Sans&family=Poppins:wght@100&display=swap');
+ * {
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     background-image: url("https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80");
+     background-attachment: fixed;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     width: 100vw;
+     height: 100vh;
+ }
+ 
+ .title {
+     font-size: 40px;
+     font-weight: 600;
+     letter-spacing: 1px;
+     color: rgb(230, 173, 17);
+     padding-left: 60px;
+ }
+ 
+ .to-do-list {
+     width: 420px;
+     padding: 20px;
+     border: 2px solid white;
+     border-radius: 20px;
+     background-color: rgb(0, 0, 0, 0.75);
+ }
+ 
+ .list-head {
+     display: grid;
+     grid-template-columns: 4fr 1fr;
+     gap: 12px;
+ }
+ 
+ .add-list {
+     width: fit-content;
+     display: flex;
+     padding: 5px;
+     border-radius: 5px;
+     background-color: rgb(8, 8, 8);
+     color: rgb(230, 173, 17);
+     font-size: 16px;
+     cursor: pointer;
+     opacity: .6;
+     pointer-events: none;
+ }
+ 
+ .add-list.active {
+     opacity: 1;
+     pointer-events: all;
+ }
+ 
+ .tasks {
+     background-color: rgb(255, 255, 255, 0.65);
+     margin-top: 10px;
+     width: 100%;
+ }
+ 
+ .item {
+     padding: 10px;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .item p {
+     font-size: 16px;
+     font-weight: 400;
+     color: red;
+ }
+ 
+ .item.completed p {
+     text-decoration: line-through;
+     color: black;
+ }
+ 
+ .item-btn {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     cursor: pointer;
+ }
+ 
+ .item-btn i {
+     padding: 5px;
+     border-radius: 50%;
+     background-color: rgb(230, 173, 17);
+ }
